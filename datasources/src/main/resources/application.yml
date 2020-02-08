@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    db1:
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/base?useSSL=FALSE&serverTimezone=UTC
+      username: root
+      password: root
+    db2:
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/shiva-maybe?useSSL=FALSE&serverTimezone=UTC
+      username: root
+      password: root
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
