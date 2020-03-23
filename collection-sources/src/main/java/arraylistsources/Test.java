@@ -10,7 +10,7 @@ import java.util.function.UnaryOperator;
 /**
  * @author shiva   2020/3/15 23:11
  */
-public class Test{
+class Test{
 
 
     public static void main(String[] args) {

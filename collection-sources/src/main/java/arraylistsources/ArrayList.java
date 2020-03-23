@@ -8,7 +8,7 @@ import java.util.function.UnaryOperator;
 /**
  * @author shiva   2020/3/15 18:46
  */
-public class ArrayList<E> extends AbstractList<E>
+class ArrayList<E> extends AbstractList<E>
         implements List<E>, RandomAccess, Cloneable, java.io.Serializable
 {
     private static final long serialVersionUID = 8683452581122892189L;
