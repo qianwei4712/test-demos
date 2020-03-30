@@ -8,7 +8,7 @@ import java.util.function.Consumer;
 /**
  * @author shiva   2020/3/18 19:46
  */
-public class LinkedTest {
+class LinkedTest {
     public static void main(String[] args) {
         LinkedList<String> linkedList = new LinkedList<>();
         linkedList.add("1");
