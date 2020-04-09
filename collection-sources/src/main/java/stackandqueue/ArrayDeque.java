@@ -8,7 +8,7 @@ import java.util.function.Consumer;
  * @author shiva   2020/4/1 20:46
  * @since   1.6
  */
-public class ArrayDeque<E> extends AbstractCollection<E>
+class ArrayDeque<E> extends AbstractCollection<E>
         implements Deque<E>, Cloneable, Serializable
 {
     private static final long serialVersionUID = 2340985798034038923L;

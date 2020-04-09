@@ -5,7 +5,7 @@ import java.util.Iterator;
 /**
  * @author shiva   2020/3/31 21:18
  */
-public interface Deque<E> extends Queue<E> {
+interface Deque<E> extends Queue<E> {
 
     /**
      * ∏∏¿‡ Queue ∑Ω∑®

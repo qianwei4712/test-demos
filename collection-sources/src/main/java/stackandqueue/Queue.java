@@ -5,7 +5,7 @@ import java.util.Collection;
 /**
  * @author shiva   2020/3/31 21:17
  */
-public interface Queue<E> extends Collection<E> {
+interface Queue<E> extends Collection<E> {
 
     //队尾添加元素，超出抛出IllegalStateException
     boolean add(E e);
