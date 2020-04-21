@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="datasources" />
         <module name="algorithm" />
+        <module name="datasources" />
+        <module name="java-new" />
       </profile>
     </annotationProcessing>
   </component>

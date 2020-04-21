@@ -1,13 +1,8 @@
 package sort;
 
-import com.sun.scenario.effect.Merge;
-import com.sun.xml.internal.bind.v2.model.annotation.Quick;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Objects;
 
 /**
  * 常见数组排序算法工具类
