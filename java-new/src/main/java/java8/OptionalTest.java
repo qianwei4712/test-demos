@@ -1,21 +1,40 @@
 package java8;
 
-import java.util.Arrays;
-import java.util.IntSummaryStatistics;
-import java.util.List;
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.Optional;
-import java.util.function.Consumer;
-import java.util.function.Supplier;
-import java.util.stream.Collectors;
+import java.util.function.Predicate;
 
 /**
  * @author shiva   2020/4/21 21:48
  */
 public class OptionalTest {
     public static void main(String[] args) {
-        User user = null;
-        OptionalTest.test2(user);
+        User user = new User();
+        user.setNo("9999");
+        OptionalTest.test5(user);
     }
+
+
+
+
+    public static void test5(User user){
+        Optional<User> opt = Optional.ofNullable(user);
+        Optional<String> s = opt.map(user1 -> user.getNo());
+        s.ifPresent(s1 -> System.out.println(s1));
+
+        Optional.ofNullable(user).map(User::getNo).ifPresent(s1 -> {
+            //业务逻辑
+            System.out.println(s1);
+        });
+
+        if (user != null && StringUtils.isNotBlank(user.getNo())){
+            //业务逻辑
+            System.out.println(user.getNo());
+        }
+
+    }
+
 
     public static void test4(User user){
         Optional<User> opt = Optional.ofNullable(user);
